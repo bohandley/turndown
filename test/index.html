@@ -846,6 +846,11 @@ Baz</pre>
   <pre class="expected">![](http://example.com/logo.png)</pre>
 </div>
 
+<div class="case" data-name="parser keeps &lt; characters">
+  <div class="input">This is a test of &lt;</div>
+  <pre class="expected">This is a test of &lt;</pre>
+</div>
+
 <!-- /TEST CASES -->
 
 <script src="turndown-test.browser.js"></script>

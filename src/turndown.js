@@ -53,7 +53,7 @@ TurndownService.prototype = {
     }
 
     if (input === '') return ''
-
+    
     var output = process.call(this, new RootNode(input))
     return postProcess.call(this, output)
   },

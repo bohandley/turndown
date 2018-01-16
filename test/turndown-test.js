@@ -168,3 +168,12 @@ test('remove elements are overridden by keep', function (t) {
     'Hello <del>world</del><ins>World</ins>'
   )
 })
+
+
+test.only('less than sign &lt;', function(t){
+  t.plan(1)
+  var turndownService = new TurndownService()
+  var lessThan = "less than &lt;"
+  console.log(lessThan)
+  t.equal(turndownService.turndown(lessThan), "less than &lt;")
+})
